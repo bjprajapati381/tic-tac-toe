@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #425062;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.container .title h1 {
+    padding: 20px 0;
+    color: #fff;
+    letter-spacing: 2PX;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#tic-tac-toe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.board {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: #7d8998;
+    padding: 10px;
+}
+
+.board button {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    font-size: 50px;
+    color: #425062;
+    background-color: #EFEFEF;
+    border: none;
+    outline: none;
+    box-shadow: inset 0 0 5px #95b4dd;
+}
+.output {
+    margin-top: 20px;
+}
+.output button{
+    height: 40px;
+    width: 100%;
+        cursor: pointer;
+        font-size: large;
+        background-color: #425062;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.output p{
+margin: 10px;
+font-size: 140%;
+}
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 150%;
+}
+/* key frames */
+
+
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
